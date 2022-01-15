@@ -58,7 +58,7 @@ def kick_defence():
 
 def attack():
     global attack_damage
-    attack_damage = input("Punch or Kick?")
+    attack_damage = input("Punch or Kick?").title()
     dice()
     if not(attack_damage == "Punch" or "Kick"):
         print("try again")
