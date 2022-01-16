@@ -77,6 +77,8 @@ def defend():
     else:
         punch_defence()
 
+#because it checks health before running an attack and then a defence both players can go negative
+# and knock each other out before the game ends. Need to move the position of the while condition to stop this
 
 while fighter_2_health > 0 or fighter_1_health > 0:
     attack()
